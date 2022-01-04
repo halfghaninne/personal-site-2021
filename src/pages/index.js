@@ -12,7 +12,7 @@ const listStyles = {
 const pageStyles = {
   color: "#232129",
   padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontFamily: "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif",
 }
 const headingStyles = {
   marginTop: 0,

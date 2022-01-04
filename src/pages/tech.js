@@ -1,21 +1,24 @@
 import * as React from "react"
 import EntryGroup from "../components/EntryGroup"
 
+import data from "../data/tech"
+
+const pageStyles = {
+  color: "#232129",
+  paddingTop: 96,
+	paddingBottom: 96,
+	paddingLeft: 200,
+	paddingRight: 200,
+  fontFamily: "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontWeight: 100,
+	letterSpacing: '-0.02em'
+}
+
 const TechPage = () => {
-	const data = [
-		{
-			position: "Senior Software Engineer",
-			company: "Newsela",
-			timeline: ["2018", "present"],
-			skills: ["React", "Redux", "GraphQL", "Python3", "Django", "A/B Testing", "Kinesis", "Sass", "CSS-in-JS", "CircleCI", "Docker"],
-			content: [
-				"Maintain and build product at Newsela, an instructional content platform that helps students read by delivering articles and comprehension assessments tailored to their individual reading levels.",
-				"As part of the Alexandria team, support editors and writers by developing a digital publishing suite that will better-support their workflows and allow for the addition of more-dynamic types of content."
-			]
-		}
-	]
+
+	console.log(data);
   return (
-		<div>
+		<div style={pageStyles}>
 			<EntryGroup data={data} />
 		</div>
 	);
